@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "to_the_bottom_qt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "to_the_bottom_qt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-to_the_bottom_qt-Debug-583130c492b99a0be3b6.json",
+					"name" : "to_the_bottom_qt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "to_the_bottom_qt_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-to_the_bottom_qt_autogen-Debug-456cea5b935bb50cd39d.json",
+					"name" : "to_the_bottom_qt_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "to_the_bottom_qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-to_the_bottom_qt_autogen_timestamp_deps-Debug-63f2d0039154f00cc09d.json",
+					"name" : "to_the_bottom_qt_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/source_code/cpp_code/to_the_bottom_qt/build-to_the_bottom_qt-Desktop_Qt_6_2_0_MinGW_64_bit-Debug",
+		"source" : "F:/source_code/cpp_code/to_the_bottom_qt/to_the_bottom_qt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

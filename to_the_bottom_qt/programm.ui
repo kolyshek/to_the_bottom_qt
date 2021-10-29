@@ -6,88 +6,145 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>175</height>
+    <width>700</width>
+    <height>253</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>253</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>253</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Programm</string>
+   <string>ToTheBottom</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="enabled">
     <bool>true</bool>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QHBoxLayout" name="generalHorizontalLayout">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
+       <layout class="QVBoxLayout" name="IAndCVerticalLayout">
         <item>
-         <widget class="QLabel" name="massLabel">
+         <widget class="QLabel" name="bodyMassLabel">
           <property name="text">
-           <string>Enter mass:</string>
+           <string>m (body mass (kg)):</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="massLineEdit">
-          <property name="maxLength">
-           <number>8192</number>
+         <widget class="QLabel" name="aOfGLabel">
+          <property name="text">
+           <string>g (acceleration of gravity (m/s2)):</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="enviromentDensityLabel">
+          <property name="text">
+           <string>r (environment density (kg/m3)):</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bodyVolumeLabel">
+          <property name="text">
+           <string>V (body volume (m3)):</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ERCLabel">
+          <property name="text">
+           <string>k (environment resistance coefficient (kg/m)):</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="calculate">
+            <property name="text">
+             <string>Calculate</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="calculateHorizontalSpacer_">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>21</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="resultLabel">
+          <property name="text">
+           <string>Result (speed (m/s)):</string>
           </property>
          </widget>
         </item>
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <layout class="QVBoxLayout" name="IOVerticalLayout">
         <item>
-         <widget class="QLabel" name="areaLabel">
-          <property name="text">
-           <string>Enter area:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="areaLineEdit">
+         <widget class="QLineEdit" name="bodyMassLineEdit">
           <property name="maxLength">
            <number>8192</number>
           </property>
          </widget>
         </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
-         <widget class="QPushButton" name="calculate">
-          <property name="text">
-           <string>Calculate</string>
+         <widget class="QLineEdit" name="aOfGLineEdit">
+          <property name="maxLength">
+           <number>8192</number>
           </property>
          </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="enviromentDensityLineEdit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="bodyVolumeLineEdit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="ERCLineEdit"/>
         </item>
         <item>
          <spacer name="horizontalSpacer">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>40</width>
-            <height>20</height>
+            <height>21</height>
            </size>
           </property>
          </spacer>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <item>
-         <widget class="QLabel" name="resultLabel">
-          <property name="text">
-           <string>Result:</string>
-          </property>
-         </widget>
         </item>
         <item>
          <widget class="QLineEdit" name="resultLineEdit"/>
@@ -103,7 +160,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>300</width>
+     <width>700</width>
      <height>20</height>
     </rect>
    </property>
